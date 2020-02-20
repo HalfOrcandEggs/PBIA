@@ -1,7 +1,0 @@
-Bud vs Act =
-VAR Act =
-    SUM ( FactResellerSales[SalesAmount] )
-VAR Bud =
-    SUM ( FactSalesQuota[SalesAmountQuota] )
-RETURN
-    Bud - Act
