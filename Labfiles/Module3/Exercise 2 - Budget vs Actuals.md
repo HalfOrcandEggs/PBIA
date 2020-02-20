@@ -1,12 +1,12 @@
 Working with DAX
 ================
 
-Exercise 3: Budget vs Actuals
+Exercise 2: Budget vs Actuals
 -----------------------------
 
 #### Scenario
 
-##### Sales Quota: Different Granularity
+##### Budget: Different Granularity
 
 >   For this example, instead of the budget data, we have Sales Quotas which are
 >   under a different granularity. The concept and principles remain the same.
@@ -24,8 +24,6 @@ Exercise 3: Budget vs Actuals
 
 >   Here is how the data in the Sales Quota table looks like: (FactSalesQuota in
 >   the AdventureWorksDW)
-
-![](media/cc2687484adc798bcae4d9a17168231f.png)
 
 >   The main tasks for this exercise are as follows:
 
@@ -78,8 +76,6 @@ what we are going to build in this part:
     quarter
 
 2.  Use a text field to create the date key YYYYMMDD.
-
-![](media/eb7a0272b60081506fe9bf08f75f6cbb.png)
 
 Go hard
 
