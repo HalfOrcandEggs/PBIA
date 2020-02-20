@@ -1,0 +1,12 @@
+
+Regions1 = IF(HASONEVALUE('DimSalesTerritory'[SalesTerritoryRegion]),VALUES('DimSalesTerritory'[SalesTerritoryRegion]),"*")
+
+Regions2 = CALCULATE(CONCATENATEX(VALUES('DimSalesTerritory'[SalesTerritoryRegion]),'DimSalesTerritory'[SalesTerritoryRegion],", "))
+
+
+Regions3 =
+VAR RegionCount = DISTINCTCOUNT('DimSalesTerritory'[SalesTerritoryRegion])
+RETURN
+IF (RegionCount >=3,
+CALCULATE(CONCATENATEX(TOPN(3,VALUES('DimSalesTerritory'[SalesTerritoryRegion])),'DimSalesTerritory'[SalesTerritoryRegion],", "))&" and more...",CALCULATE(CONCATENATEX(VALUES('DimSalesTerritory'[SalesTerritoryRegion]),'DimSalesTerritory'[SalesTerritoryRegion],", "))
+)
